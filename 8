@@ -1,0 +1,3 @@
+SELECT E.*, D.Dname AS DepartmentName, D.Loc AS DepartmentLocation
+FROM Emp E
+LEFT JOIN Dept D ON E.DeptNo = D.DeptNo;
