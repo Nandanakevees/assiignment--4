@@ -1,0 +1,3 @@
+SELECT E.Ename AS EmployeeName, M.Ename AS ManagerName
+FROM Emp E
+LEFT JOIN Emp M ON E.Mgr = M.EmpNo;
