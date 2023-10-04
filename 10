@@ -1,0 +1,6 @@
+DELETE FROM Emp
+WHERE DeptNo IN (
+    SELECT DeptNo
+    FROM Dept
+    WHERE Loc = 'Chennai'
+);
