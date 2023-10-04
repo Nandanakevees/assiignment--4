@@ -1,0 +1,2 @@
+SELECT Ename AS EmployeeName, Sal + COALESCE(Commission, 0) AS GrossSalary
+FROM Emp;
