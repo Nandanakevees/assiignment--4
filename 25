@@ -1,0 +1,4 @@
+SELECT manager_name
+FROM employees
+GROUP BY manager_name
+HAVING COUNT() = (SELECT MAX(manager_count) FROM (SELECT manager_name
