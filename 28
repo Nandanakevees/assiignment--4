@@ -1,0 +1,4 @@
+SELECT m.*, SUM(e.experience) AS TotalExperience
+FROM employees m
+LEFT JOIN employees e ON m.employee_id = e.manager_id
+GROUP BY m.employee_id;
