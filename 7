@@ -1,0 +1,4 @@
+SELECT D.Dname AS DepartmentName, SUM(E.Sal) AS TotalSalary
+FROM Dept D
+LEFT JOIN Emp E ON D.DeptNo = E.DeptNo
+GROUP BY D.Dname;
