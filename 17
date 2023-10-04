@@ -1,0 +1,1 @@
+SELECT location, COUNT(*) AS NumberOfEmployees FROM employees GROUP BY location;
