@@ -1,0 +1,1 @@
+SELECT * FROM employees WHERE is_manager = 1 AND commission < 1000 AND location = 'Delhi';
