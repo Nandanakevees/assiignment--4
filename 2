@@ -1,0 +1,8 @@
+SELECT DeptNo, Dname, Loc
+FROM Dept
+WHERE DeptNo IN (
+    SELECT DeptNo
+    FROM Emp
+    GROUP BY DeptNo
+    HAVING COUNT(*) > 1
+);
